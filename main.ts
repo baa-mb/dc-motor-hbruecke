@@ -15,7 +15,7 @@ basic.showIcon(IconNames.Yes)
 lauf = 0
 basic.forever(function () {
     if (lauf == 1) {
-        basic.pause(2000)
+        basic.pause(1000)
         distanz = sonar.ping(
         DigitalPin.P8,
         DigitalPin.P2,
