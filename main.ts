@@ -23,7 +23,7 @@ basic.forever(function () {
         )
         if (distanz != distanz_alt) {
             basic.showNumber(distanz)
-            motorwert = Math.map(Math.min(15, distanz), 1, 15, 0, 850)
+            motorwert = Math.map(Math.min(25, distanz), 1, 15, 0, 850)
             pins.digitalWritePin(DigitalPin.P1, 0)
             pins.analogWritePin(AnalogPin.P0, 850 - motorwert)
             distanz_alt = distanz
